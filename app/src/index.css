@@ -1,0 +1,263 @@
+html{font-size: 32px;touch-action: none;height: 100%;overflow-x:hidden;}
+
+@media (min-device-width : 320px) {
+  html{font-size: 50px;}
+}
+@media (min-device-width : 360px) {
+  html{font-size: 50px;}
+}
+/* iphone 6  */
+@media (min-device-width : 375px) {
+   html{font-size: 64px;}
+}
+/*  iphone6 plus  */
+@media (min-device-width : 414px) {
+    html{font-size: 75px;}
+}
+#root{
+  height: 100%;
+  width: 100%;
+  max-width: 768px;
+}
+body {
+  margin: 0;
+  overflow-x:hidden;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: auto;
+}
+.am-navbar-light .am-navbar-title{
+  color: #515151;
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+.widthFix{
+  position:relative;
+  width:100%;
+  height:100%;
+  background-color: #fff;
+  overflow:hidden;
+    /* background:url('http://www.freelycar.com/management/bac.jpg') no-repeat ; */
+    /* background-size: auto 100%; */
+}
+.choose-btn .choose-btn-add {
+  width: 1rem;
+  height: 1rem;
+  vertical-align: middle;
+}
+/* .btn-box{
+  width: 100%;
+  position: absolute;
+  bottom: 1rem;
+} */
+.discribe-info {
+  height: auto;
+  padding: 36% 0;
+  font-size: 0.45rem;
+  text-align: center;
+  color: #515151;
+}
+.bg{
+  width: 100%;
+  overflow: hidden;
+  margin-top: 30px;
+  height: 380px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url(../src/assets/bg.png)
+}
+.btn-box {
+  position:absolute;
+  bottom:0;
+  width:200%;
+  height:90%;
+  text-align:center;
+  margin-left:-50%;
+  margin-bottom:-70%;
+  border-radius:80%;
+  box-shadow: 0px 0px 20px 0px rgba(220,220,220,0.5);
+  background:#fff;
+  overflow:hidden;
+}
+.choose-btn {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  align-items: center;
+  margin: 1.5rem auto 0;
+  width: 60%;
+  height: .7rem;
+  border-radius: 5px;
+  background: #07aa66;
+  box-shadow: 0 0 0.15rem 0 rgba(0, 0, 0, 0.4);
+  color: #fff;
+  font-size: 19px;
+  position: relative;
+}
+
+.picture {
+    display: block;
+    position: absolute;
+    width:100%;
+    height: 0.7rem;
+    left: 50%;
+    top: 50%;
+    font-size: 0;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+    opacity: 0;
+}
+.knowledge{
+  margin: 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.book{
+  background-image: url(../src/assets/book.png)
+}
+.camera{
+  background-image: url(../src/assets/camera.png)
+}
+.clIcon{
+  width: 0.5rem;
+  height: 0.5rem;
+  background-size: cover;
+  display: inline-block;
+}
+.clBtn .am-button{
+  width: 50%;
+  border-radius: 0;
+}
+.clBtn .am-button::before{
+  border-radius: 0 !important;
+}
+.flexCenter{
+  display: flex;
+  align-items: center;
+}
+.resultPic{
+  width: 100%;
+  /* height: 200px; */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.am-icon {
+  fill: currentColor;
+  background-size: cover;
+  width: 0.35rem;
+  height:  0.35rem;
+}
+
+.my-accordion{
+  margin: 0.2rem;
+}
+.am-accordion-item{
+  margin-bottom: 0.2rem;
+}
+.am-list-item {
+  padding-left: 0.4rem;
+}
+.clCard{
+  font-size: 0.25rem;
+  margin: 0.2rem;
+  padding: 0.2rem;
+  text-align: center;
+  border-radius: 4px;
+  border: 1px solid #ebeef5;
+  background-color: #fff;
+  overflow: hidden;
+  color: #303133;
+  transition: .3s;
+  box-shadow: 0 2px 12px 0 rgba(0,0,0,.1);
+}
+.clCard .plant{
+  width: 2.5rem;
+  height: 2.5rem;
+  margin: 0 auto;
+  background-position: center;
+  background-size: cover;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  position: relative;
+  border: 0.15rem solid #cccccc;
+  overflow: hidden;
+}
+.plantDetail{
+  /* width: 3rem;
+  height: 3rem; */
+  margin: 0 auto;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.det{
+  position: absolute;
+  bottom: 0;
+  height: 0.6rem;
+  line-height: 0.5rem;
+  width: 100%;
+  color: #fff;
+  text-align: center;
+  background-color: #7779;
+  margin: 0;
+  font-size: 0.22rem;
+}
+.noDet{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  color: #fff;
+  text-align: center;
+  background-color: #7779;
+  margin: 0;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  font-size: 0.3rem;
+}
+.green{
+  color: #07aaa5;
+}
+.danshen-henan{
+  background-image: url(../src/assets/danshen-henan.png)
+}
+.danshen-shandong{
+  background-image: url(../src/assets/danshen-shandong.png)
+}
+.danshen-shanxi{
+  background-image: url(../src/assets/danshen-shanxi.png)
+}
+.tianma-dongbei{
+  background-image: url(../src/assets/tianma-dongbei.png)
+}
+.tianma-guizhou{
+  background-image: url(../src/assets/tianma-guizhou.png)
+}
+.tianma-henan{
+  background-image: url(../src/assets/tianma-henan.png)
+}
+.tianma-hubei{
+  background-image: url(../src/assets/tianma-hubei.png)
+}
+.tianma-lijiang{
+  background-image: url(../src/assets/tianma-lijiang.png)
+}
+.tianma-shaanxi{
+  background-image: url(../src/assets/tianma-shaanxi.png)
+}
+.tianma-zhaotong{
+  background-image: url(../src/assets/tianma-zhaotong.png)
+}
