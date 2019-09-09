@@ -1,16 +1,11 @@
 danshen-henan
 danshen-shandong
-
 danshen-shanxi
 tianma-shaanxi
-
 tianma-dongbei
 tianma-henan
-
 tianma-hubei
-
 tianma-lijiang
-
 tianma-guizhou
 tianma-zhaotong
 tianma-jiuzhaigou
