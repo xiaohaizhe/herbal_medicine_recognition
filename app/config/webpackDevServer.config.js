@@ -84,7 +84,7 @@ module.exports = function(proxy, allowedHost) {
     proxy:{
       // 这里设置代理
       '/app': {
-        target: 'http://192.168.1.108:5555/',
+        target: '121.40.87.226:8084/',
         changeOrigin: true,
         secure: false,
         pathRewrite:{

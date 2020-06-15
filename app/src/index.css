@@ -66,13 +66,19 @@ code {
   color: #515151;
 }
 .bg{
-  width: 100%;
+  width: 60%;
   overflow: hidden;
-  margin-top: 30px;
-  height: 380px;
+  margin: 15% auto;
+  background-position-x: center;
+  height: 4rem;
   background-repeat: no-repeat;
   background-size: contain;
-  background-image: url(../src/assets/bg1.png)
+  background-image: url(../src/assets/bgg.jpg)
+}
+.tip{
+  text-align: center;
+  width: 80%;
+  margin: 5px auto;
 }
 .btn-box {
   position:absolute;

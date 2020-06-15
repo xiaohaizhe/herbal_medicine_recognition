@@ -8,7 +8,8 @@ export default class CropperPic extends React.Component {
         super(props)
         this.state = {
             imgSrc:null,
-            height:0
+            height:0,
+            file:null
         }
     }
     componentDidMount() {
@@ -16,7 +17,7 @@ export default class CropperPic extends React.Component {
             const fileReader = new FileReader()
             fileReader.onload = (e) => {
             const dataURL = e.target.result
-            this.setState({imgSrc: dataURL,height:window.innerHeight-47})
+            this.setState({imgSrc: dataURL,height:window.innerHeight-47,file:this.props.location.query})
             }
             fileReader.readAsDataURL(this.props.location.query.file)
         }else{
@@ -30,8 +31,11 @@ export default class CropperPic extends React.Component {
         let resultpic = result.toDataURL();
         result.toBlob(async function(blob) {
             let formData = new FormData();
-            let test = new Date().getTime()+".png";
-            formData.append("file",blob,test);
+            // let test = new Date().getTime()+".png";
+            // debugger
+            // formData.append("file",blob,test);
+            formData.append("file",that.state.file.file);
+            
             Toast.loading('识别中', 50000, () => {
                 console.log('Load complete !!!');
               });
@@ -42,6 +46,8 @@ export default class CropperPic extends React.Component {
                 body:formData
             })
             let responseJson = await resp.json();
+            // let responseJson = {"code": 0, "result": [{"label_id": "7", "name": "茶树炭疽病", "score": "75.18%"}, {"label_id": "4", "name": "茶叶叶枯病",
+            // "score": "20.29%"}, {"label_id": "8", "name": "茶苗白绢病", "score": "4.13%"}]}
             Toast.hide();
             that.props.history.push({pathname:'/Result',query:{resultpic:resultpic,results:responseJson.result}})
           });

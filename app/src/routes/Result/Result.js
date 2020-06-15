@@ -63,10 +63,10 @@ export default class Result extends React.Component {
                                             // }else{
                                                 return <div className="clCard" key={val} style={{height:(this.state.height-45)*0.5}}>
                                                         <div style={{height:"1rem"}}>   
-                                                            <p>中草药名称：<span className="green">{val.name}</span></p>
+                                                            <p style={{margin: '15% 0'}}>茶叶病虫害名称：<span className="green">{val.name}</span></p>
                                                             <p>可能性：<span className="green">{val.score}</span></p>
                                                         </div>
-                                                        <p className={`${val.class} plant leaf`}></p>
+                                                        {/* <p className={`${val.class} plant leaf`}></p> */}
                                                     </div>
                                         //     }
                                             

@@ -14,7 +14,7 @@ export default class Photo extends React.Component {
         });
     }
     photo(e) {
-        
+        // debugger
         // 获取当前选中的文件
         if (e) {
             let file = e.target.files[0];
@@ -47,6 +47,9 @@ export default class Photo extends React.Component {
                         // ]}
                         >拍照识别</NavBar> */}
                         <div  className="bg "></div>
+                        <p className="tip">基于神经网络技术，
+                        </p>
+                        <p className="tip">实现茶树典型病害远程推理、诊断</p>
                         {/* <div className="discribe-info">
                             <p>中草药智能识别</p>
                             <div className="leaf"></div>
@@ -58,7 +61,7 @@ export default class Photo extends React.Component {
                                 
                                 <div className="choose-btn">
                                     <input className="picture" type="file" name="image" onChange={(e) => this.photo(e)} />
-                                    拍 照 识 药
+                                    拍 照 识 茶
                                     {/* <img className="choose-btn-add" src={require("../../assets/photo.png")} alt="logo"/> */}
                                 </div>
                             {/* </label>
